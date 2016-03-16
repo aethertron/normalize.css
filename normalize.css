@@ -130,14 +130,6 @@ strong {
 }
 
 /**
- * Address styling not present in Safari and Chrome.
- */
-
-dfn {
-  font-style: italic;
-}
-
-/**
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
@@ -192,7 +184,7 @@ sub {
  */
 
 img {
-  border: 0;
+  border-style: none;
 }
 
 /**
