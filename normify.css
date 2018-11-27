@@ -1,6 +1,12 @@
 /* normify.css v0.1 forked from: */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /**
  * 1. Set default font family to sans-serif (opinionated).
  * 2. Prevent iOS and IE text size adjust after device orientation change,
@@ -332,14 +338,12 @@ input {
  * It's recommended that you don't attempt to style these elements.
  * Firefox's implementation doesn't respect box-sizing, padding, or width.
  *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
+ * Remove excess padding in IE 8/9/10.
  */
 
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  padding: 0;
 }
 
 /**
@@ -409,4 +413,20 @@ textarea {
 
 optgroup {
   font-weight: bold;
+}
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
 }
